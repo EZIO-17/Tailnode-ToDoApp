@@ -17,8 +17,9 @@ function App() {
 
       var newli = document.createElement("li");
       var checkBtn = document.createElement("button");
+      checkBtn.style.marginRight = "-12rem";
       var delBtn = document.createElement("button");
-
+      delBtn.style.marginRight = "-8rem";
       var regexp = /\#\w\w+\s?/g
       var searchHashtag = input.value.replace(regexp, <span style="color:white"></span>);
       // searchHashtag.innerHTML = ``;
@@ -31,7 +32,7 @@ function App() {
       console.log('sakdjsan',searchHashtag)
       console.log("4" , checkBtn)
       checkBtn.innerHTML = `Done`;
-      delBtn.innerHTML = `<button>Remove</button>`;
+      delBtn.innerHTML = `Remove`;
       console.log("1222",input)
       if (input.value !== "") {
           newli.innerHTML = input.value
@@ -61,10 +62,10 @@ function App() {
           <button onClick={addList}>Add</button>
       </div>
       <ol className="notcomp">
-          <h3>Task Not Completed</h3>
+          <h3>Tasks To Do</h3>
       </ol>
       <ol className="comp">
-          <h3>Task Completed</h3>
+          <h3>Tasks Done</h3>
       </ol>
     </div>
   );
