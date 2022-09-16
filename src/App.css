@@ -6,7 +6,7 @@
 
 body {
   height: 100vh;
-  background-color: rgb(238, 219, 185);
+  background-color: rgb(250, 249, 249);
 }
 
 .cont {
@@ -90,6 +90,10 @@ ol li::before {
   text-align: center;
   color: white;
   margin-right: 0.5rem;
+}
+
+ol li b{
+  color: aliceblue;
 }
 
 li button {
