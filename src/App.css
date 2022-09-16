@@ -81,6 +81,7 @@ ol li {
   font-size: 25px;
   counter-increment: my-counter;
   border-radius: 1rem;
+  word-break: break-all;
 }
 
 .comp li {
