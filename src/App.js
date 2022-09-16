@@ -1,5 +1,4 @@
 // import logo from './logo.svg';
-import { faPassport } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 
 function App() {
