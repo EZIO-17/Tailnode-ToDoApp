@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 
 
@@ -20,20 +19,17 @@ function App() {
       checkBtn.style.marginRight = "-12rem";
       var delBtn = document.createElement("button");
       delBtn.style.marginRight = "-8rem";
-      var regexp = /\#\w\w+\s?/g
-      var searchHashtag = input.value.replace(regexp, <span style="color:white"></span>);
-      // searchHashtag.innerHTML = ``;
+      
 
       var str = input.value;       
       str = str.replace(/(<.+?>)/gi, '');        
       str = str.replace(/(?:\s|^)#([^0-9\W\s][a-zA-z0-9]*)/g, `<b> #$1</b>`);       
       str = str.replace(/(?:\r\n|\n\r|\r|\n)/g, '<br />');       
       input.value = str
-      console.log('sakdjsan',searchHashtag)
-      console.log("4" , checkBtn)
+      
       checkBtn.innerHTML = `Done`;
       delBtn.innerHTML = `Remove`;
-      console.log("1222",input)
+      
       if (input.value !== "") {
           newli.innerHTML = input.value
           // newli.textContent = input.value;
